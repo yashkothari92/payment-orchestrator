@@ -1,5 +1,7 @@
 # Payment Orchestrator
 
+[Add badge here]
+
 Idempotent payment orchestration service built with Java 21 and Spring Boot.
 
 ## Problem
