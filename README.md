@@ -1,6 +1,6 @@
 # Payment Orchestrator
 
-[Add badge here]
+![CI](https://github.com/yashkothari92/payment-orchestrator/actions/workflows/ci.yml/badge.svg)
 
 Idempotent payment orchestration service built with Java 21 and Spring Boot.
 
