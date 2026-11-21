@@ -8,6 +8,11 @@ spring:
       ddl-auto: validate
   flyway:
     enabled: true
+
+timeout:
+  psp-timeout: 10s
+  lock-margin: 15s
+
 management:
   endpoints:
     web:
