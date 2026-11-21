@@ -1,5 +1,5 @@
 CREATE TABLE idempotency_keys(
-    key varchar(100) NOT NULL,
+    idempotency_key varchar(100) NOT NULL,
     merchant_id varchar(100) NOT NULL,  --take it from JWT claim
     request_hash char(64) NOT NULL,
     status varchar(30) NOT NULL DEFAULT 'IN_PROGRESS'
@@ -8,5 +8,5 @@ CREATE TABLE idempotency_keys(
     response_body jsonb,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     locked_at TIMESTAMPTZ,
-    PRIMARY KEY(key, merchant_id)
+    PRIMARY KEY(idempotency_key, merchant_id)
 );
